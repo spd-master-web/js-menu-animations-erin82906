@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // animate here when open the menu
     console.log(event);
 
-    gsap.to(".hamburger",{
+    gsap.to(".hamburger", {
       x: 0,
       y: -50,
       duation: 0.2,
@@ -33,50 +33,51 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 0.1,
     });
 
-    gsap.to(".close",{
+    gsap.to(".close", {
       x: 0,
       y: -1,
       duration: 0.2,
       ease: "power3",
     });
   })
-})
 
-  //the click animation isn't working because it said 'close' value is never read, how can I fix it
+
   close.addEventListener('click', (event) => {
-  console.log(event);
+    console.log(event);
 
-  gsap.to(".close", {
-    x: 0,
-    y: 1,
-    duration: 0.2,
-    ease: "power3",
-  });
+    gsap.to(".close", {
+      x: 0,
+      y: 1,
+      duration: 0.2,
+      ease: "power3",
+    });
 
-  gsap.to("aside li",{
-    opacity: 0,
-    duration: 0.5,
-    stagger: -0.5,
-  });
+    gsap.to("aside li", {
+      opacity: 0,
+      duration: 0.5,
+      stagger: -0.5,
+    });
 
-  gsap.to("aside. copy", {
-    x: 0,
-    y: -2,
-    opacity: 0,
-    roation: 1080,
-    duration: 1,
-  });
+    gsap.to("aside. copy", {
+      x: 0,
+      y: -2,
+      opacity: 0,
+      roation: 1080,
+      duration: 1,
+    });
 
-  gsap.to(".hamburger", {
-    x: 0,
-    y: -1,
-  });
+    gsap.to(".hamburger", {
+      x: 0,
+      y: -1,
+    });
 
-  gsap.to("aside",{
-    delay: 2,
-    x: 0,
-    y: 1,
-    duration: 0.7,
-  });
+    gsap.to("aside", {
+      delay: 2,
+      x: 0,
+      y: 1,
+      duration: 0.7,
+    });
+
+  })
 
 })
