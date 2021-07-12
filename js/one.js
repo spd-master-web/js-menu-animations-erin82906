@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     gsap.to("aside",{
-      delay: 2,
+      delay: 1.5,
       x: -400,
       duration: 0.7,
       ease: "power4",

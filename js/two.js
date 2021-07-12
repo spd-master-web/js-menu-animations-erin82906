@@ -22,21 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.to("aside li", {
       duration: 1,
       opacity: 1,
-      stagger: 0.3,
+      stagger: 0.2,
     });
 
     gsap.to("aside .copy", {
       opacity: 1,
       rotation: 1080,
       duration: 1,
-      y: -1,
+      y: 1,
       delay: 0.1,
     });
 
     gsap.to(".close", {
       x: 0,
       y: -1,
-      duration: 0.2,
+      duration: 0.5,
       ease: "power3",
     });
   })
@@ -47,35 +47,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gsap.to(".close", {
       x: 0,
-      y: 1,
+      y: -50,
+      delay: 1,
       duration: 0.2,
       ease: "power3",
     });
 
     gsap.to("aside li", {
       opacity: 0,
-      duration: 0.5,
-      stagger: -0.5,
+      stagger: 0.2,
     });
 
-    gsap.to("aside. copy", {
+    gsap.to("aside .copy", {
       x: 0,
-      y: -2,
+      y: 100,
+      delay: 0.5,
       opacity: 0,
-      roation: 1080,
-      duration: 1,
+      rotation: 380,
     });
 
-    gsap.to(".hamburger", {
-      x: 0,
-      y: -1,
-    });
-
-    gsap.to("aside", {
-      delay: 2,
+    gsap.to(".hamburger",{
       x: 0,
       y: 1,
-      duration: 0.7,
+    });
+
+    gsap.to("aside",{
+      delay: 1,
+      x: 0,
+      y: -1720,
+      duration: 1,
+      ease: "power4.out",
     });
 
   })
